@@ -4,8 +4,8 @@
 <!-- Mirrored from sign.ipasign.cc/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 07 May 2023 21:54:16 GMT -->
 <head>
     <meta charset="UTF-8">
-    <title>IPASign - sign ipa files online without macOS for beta-testing</title>
-<meta name="Keywords" content="IPA签名工具,IOS签名工具,APP签名工具,苹果IPA签名工具,苹果IOS签名工具,苹果APP签名工具,企业签名工具,免费签名工具,重签名去锁,windows签名工具,mac签名工具,win/mac平台在线签名,ipa sign,ios sign,app sign,ipa signer,ios signer,app signer,ipa resign,ios resign,app resign,ipa signature,ios signature,app signature"/>
+    <title>IPASign - Ký IPA trực tiếp trên Iphone/Ipad</title>
+<meta name="Keywords" content="ipa sign,ios sign,app sign,ipa signer,ios signer,app signer,ipa resign,ios resign,app resign,ipa signature,ios signature,app signature"/>
 <meta name="description" content="ios app signer,ipa signer tool,apple developer enterprise certificate sign,app free resign,Windows platform signature,mac platform xcode signature,iphone signer without jailbreak,ipa resign tool"/>
 
     <script type="text/javascript" src="js/vue.min.js"></script>
@@ -35,21 +35,21 @@
                     <transition name = "fade">
                         <div v-show="show" role="alert" aria-live="polite" aria-atomic="true" class="alert alert-dismissible alert-info">
                             <button @click="close" type="button" aria-label="Close" class="close">×</button>
-                            <h4 class="alert-heading">This service allow you sign IPA files online without macOS for beta-testing.</h4>
-                            <p>By selecting files and pressing <span class="badge badge-secondary">Sign it now!</span> button you are confirming that:</p>
+                            <h4 class="alert-heading">Trang cho phép bạn ký IPA Ngay Trên Iphone/Ipad!</h4>
+                            <p>Chọn file và nhấn nút ký<span class="badge badge-secondary">Sign it now!</span></p>
                             <ul>
-                                <li>You have rights to use this IPA file;</li>
-                                <li>You have rights to use this p12 certificate;</li>
-                                <li>You will not use this service for piracy and other illegal purposes.</li>
+                                <li>Chọn đúng file định dạng IPA</li>
+                                <li>Chọn file .p12 và file .mobipervision</li>
+                                <li>Nhập mật khẩu chứng chỉ</li>
                             </ul>
-                            <p>This service will not save, use or distribute your files after signing process.</p>
-			    <p>IPA signature discussion group telegram: <span class="badge badge-secondary"> https://t.me/ipasigns </span>  </p>
+                            <p>Đây không phải là kho lưu trữ nên IPA sau khi ký</p>
+			    <!-- <p>IPA signature discussion group telegram: <span class="badge badge-secondary"> https://t.me/ </span>  </p> -->
                         </div>
                     </transition>
 
                     <div class="card">
                         <div class="card-body" v-show="showStep1">
-                            <h4 class="card-title">Step 1: Select your files</h4>
+                            <h4 class="card-title">Bước 1: Chọn tệp của bạn</h4>
                             <div class="row mb-3">
                                 <div class="col-sm-12">
                                     <div class="custom-file b-form-file is-invalid" v-bind:class="ipaCss">
@@ -99,13 +99,13 @@
                             <div class="row mb-3">
                                 <div class="col-sm-6">
                                     <label class="form-control">
-                                        <span>Delete dynamic library</span>
+                                        <span>Xóa thư viện</span>
                                         <div style="display: inline-block; float: right"><input type="radio" name="radio" value="1" v-model="unlockValue" disabled="disabled"> Yes</div>
                                     </label>
                                 </div>
                                 <div class="col-sm-6">
                                     <label class="form-control">
-                                        <span>Delete dynamic library</span>
+                                        <span>Xóa thư viện</span>
                                         <div style="display: inline-block; float: right"><input type="radio" name="radio" value="0" v-model="unlockValue"> No</div>
                                     </label>
                                 </div>
@@ -119,7 +119,7 @@
                         </div>
 
                         <div class="card-body" v-show="showStep2">
-                            <h4 class="card-title">Step 2: Uploading</h4>
+                            <h4 class="card-title">Bước 2: Đang upload...</h4>
                             <div class="progress">
                                 <div role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ progressBar }}" class="progress-bar bg-success progress-bar-striped progress-bar-animated"
                                      v-bind:style="{'width': progressBar + '%'}"><strong>{{ progressBar }}%</strong>
@@ -128,27 +128,27 @@
                         </div>
 
                         <div class="card-body" v-show="showStep3">
-                            <h4 class="card-title">Step 3: Processing</h4>
+                            <h4 class="card-title">Bước 3: Đang tiến hàng</h4>
                             <svg style="height: 20px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-cog fa-w-16 fa-spin">
                                     <path fill="currentColor" d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" class=""></path>
-                            </svg> We are processing your files, please wait...
+                            </svg> Chúng tôi đang xử lý tập tin của bạn, vui lòng chờ...
                         </div>
 
                         <div class="card-body" v-show="showStep4">
-                            <h4 class="card-title">Step 4: Install application</h4>
+                            <h4 class="card-title">Bước 4: Cài ứng dụng</h4>
                             <div class="row">
                                 <div class="col-sm-4">
-                                    <h6>Scan this code with camera</h6>
+                                    <h6>Quét mã QR</h6>
                                     <div id="qrcode" style="width:100px; height:100px; margin-top:15px;"></div>
                                 </div>
                                 <div class="col-sm-8">
-                                    <h6>Copy &amp; send link to your testers</h6>
+                                    <h6>Sao chép link tới thiết bị của bạn</h6>
                                     <a :href="download"
                                        target="_self" class="d-block mx-auto">{{download}}</a>
-                                    <div style="margin-top: 48px;"><a :href="download_ipa">Download IPA</a></div>
+                                    <div style="margin-top: 48px;"><a :href="download_ipa">Tải IPA</a></div>
                                 </div>
                             </div>
-                            <button type="button" class="btn mt-3 btn-primary btn-block" @click="index">Start over</button>
+                            <button type="button" class="btn mt-3 btn-primary btn-block" @click="index">Ký lại</button>
                         </div>
 
                     </div>
@@ -169,13 +169,13 @@
                 showStep4: false,
                 progressBar: 0,
                 ipaCss: 'is-invalid',
-                ipaText: 'Choose an .ipa file or drop it here...',
+                ipaText: 'Chọn file .ipa hoặc ném vào đây...',
                 p12Css: 'is-invalid',
-                p12Text: 'Choose an .p12 file or drop it here...',
+                p12Text: 'Chọn file .p12 hoặc ném vào đây...',
                 pwdCss: 'is-invalid',
-                pwdText: 'Enter .p12 password',
+                pwdText: 'Nhập mật khẩu chứng chỉ .p12',
                 mobCss: 'is-invalid',
-                mobText: 'Choose an .mobileprovision file or drop it here...',
+                mobText: 'Chọn file .mobileprovision hoặc ném vào đây...',
                 download: '',
                 download_ipa: '',
                 ipa: '',
@@ -197,7 +197,7 @@
                                 this.ipa = params.target.files[0];
                             } else {
                                 this.ipaCss = 'is-invalid';
-                                this.ipaText = 'Choose an .ipa file or drop it here...';
+                                this.ipaText = 'Chọn file .ipa hoặc ném vào đây...';
                                 this.ipa = '';
                             }
                             break;
@@ -208,7 +208,7 @@
                                 this.p12 = params.target.files[0];
                             } else {
                                 this.p12Css = 'is-invalid';
-                                this.p12Text = 'Choose an .ipa file or drop it here...';
+                                this.p12Text = 'Chọn file .ipa hoặc ném vào đây...';
                                 this.p12 = '';
                             }
                             break;
@@ -219,7 +219,7 @@
                                 this.mobileprovision = params.target.files[0];
                             } else {
                                 this.mobCss = 'is-invalid';
-                                this.mobText = 'Choose an .mobileprovision file or drop it here...';
+                                this.mobText = 'Chọn file .mobileprovision hoặc ném vào đây...';
                                 this.mobileprovision = '';
                             }
                             break;
